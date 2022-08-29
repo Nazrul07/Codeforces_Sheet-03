@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int N,M,i,j;
+    cin>>N>>M;
+    int a[N][M];
+    for(i=0 ; i<N ; i++)
+    {
+        for(j=0 ; j<M ; j++)
+        {
+            cin>>a[i][j];
+        }
+    }
+    for(i=0 ; i<N ; i++)
+    {
+        for(j=M-1 ; j>=0 ; j--)
+        {
+            cout<<a[i][j]<<" ";
+        }cout<<endl;
+    }
+}
