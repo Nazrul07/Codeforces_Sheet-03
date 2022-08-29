@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+using namespace std;
+ 
+int main()
+{
+    int test,i,n,pos=-1;
+    cin>>test;
+    int a[test];
+    for(i=0 ; i<test ; i++)
+    {
+        cin>>a[i];
+    }
+    cin>>n;
+    for(i=0 ; i<test ; i++)
+    {
+        if(a[i]==n)
+        {
+            pos=i;
+            break;
+        }
+    }
+    cout<<pos;
+}
