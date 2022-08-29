@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int test,i;
+    cin>>test;
+    int a[test];
+    for(i=0 ; i<test ; i++)
+    {
+        cin>>a[i];
+        if(a[i]<=10)
+        {
+            cout<<"A["<<i<<"] = "<<a[i]<<endl;
+        }
+    }
+}
