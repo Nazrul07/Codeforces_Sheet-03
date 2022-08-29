@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int test,i,j=0,l;
+    cin>>test;
+    int a[test];
+    for(i=0 ; i<test ; i++)
+    {
+        cin>>a[i];
+    }
+    l=test/2;
+    for(i=0 ; i<l ; i++)
+    {
+        if(a[i]!=a[test-1-i])
+        {
+            j=1;
+            break;
+        }
+    }
+    if(j==1)cout<<"NO";
+    else cout<<"YES";
+    return 0;
+}
