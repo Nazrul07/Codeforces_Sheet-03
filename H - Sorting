@@ -1,0 +1,29 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int test,i,j,temp;
+    cin>>test;
+    int a[test];
+    for(i=0 ; i<test ; i++)
+    {
+        cin>>a[i];
+    }
+    for(i=0 ; i<test ; i++)
+    {
+        for(j=i+1 ; j<test ; j++)
+        {
+            if(a[i]>a[j])
+            {
+                temp=a[i];
+                a[i]=a[j];
+                a[j]=temp;
+            }
+        }
+    }
+    for(i=0 ; i<test ; i++)
+    {
+        cout<<a[i]<<" ";
+    }
+    return 0;
+}
