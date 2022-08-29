@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int test,i,Min=100000,pos;
+    cin>>test;
+    int a[test];
+    for(i=0 ; i<test ; i++)
+    {
+        cin>>a[i];
+        if(Min>a[i])
+        {
+            Min=a[i];
+            pos=i+1;
+        }
+    }
+    cout<<Min<<" "<<pos;
+    return 0;
+}
