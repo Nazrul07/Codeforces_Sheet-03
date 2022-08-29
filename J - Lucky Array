@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int test,k,Min,count=0;
+    cin>>test;
+    int a[test];
+    for(k=0 ; k<test ; k++)
+    {
+        cin>>a[k];
+        if(k==0)Min=a[0];
+        if(Min>a[k])
+            Min=a[k];
+    }
+    for(k=0 ; k<test ; k++)
+    {
+        if(a[k]==Min)
+            count++;
+    }
+    if(count%2==0)
+        cout<<"Unlucky";
+    else
+        cout<<"Lucky";
+}
