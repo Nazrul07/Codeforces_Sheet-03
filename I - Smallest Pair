@@ -1,0 +1,31 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int test,i,j,k,e,cal,Min;
+    cin>>test;
+    for(k=1 ; k<=test ; k++)
+    {
+        cin>>e;
+        int a[e];
+        for(i=0 ; i<e ; i++)
+            cin>>a[i];
+        for(i=0 ; i<e ; i++)
+        {
+            for(j=i+1 ; j<e ; j++)
+            {
+                cal=a[i]+a[j]+j-i;
+                if(i==0 && j==1)
+                    Min=cal;
+                else
+                {
+                    if(Min>cal)
+                        Min=cal;
+                }
+            }
+        }
+        cout<<Min<<endl;
+    }
+    return 0;
+}
+
