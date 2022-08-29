@@ -1,0 +1,31 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int N,M,X,p=0,i,j;
+    cin>>N>>M;
+    int a[N][M];
+    for(i=0 ; i<N ; i++)
+    {
+        for(j=0 ; j<M ; j++)
+        {
+            cin>>a[i][j];
+        }
+    }
+    cin>>X;
+    for(i=0 ; i<N ; i++)
+    {
+        for(j=0 ; j<M ; j++)
+        {
+            if(a[i][j]==X)
+            {
+                p=1;
+                break;
+            }
+        }
+    }
+    if(p==0)
+        cout<<"will take number";
+    else
+        cout<<"will not take number";
+}
