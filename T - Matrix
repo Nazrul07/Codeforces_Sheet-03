@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int N,i,j,sum,sum1=0,sum2=0;
+    cin>>N;
+    int a[N][N];
+    for(i=0 ; i<N ; i++)
+    {
+        for(j=0 ; j<N ; j++)
+        {
+            cin>>a[i][j];
+            if(i==j)
+                sum1+=a[i][j];
+            if(i+j==N-1)
+                sum2+=a[i][j];
+        }
+    }
+    sum=sum1-sum2;
+    cout<<abs(sum);
+}
